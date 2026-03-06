@@ -3,39 +3,338 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programando Con Tascon</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Promoción Grado 10 - Recuerdos Inolvidables</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="profile">
-            <h1 class="username">Programando Con Tascon</h1>
-            
-            <div class="social-icons">
-                <a href="mailto:devtasconlua@gmail.com" class="social-icon" title="Email: devtasconlua@gmail.com" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Grado 10</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#estudiantes">Estudiantes</a></li>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#recuerdos">Recuerdos</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-        
-        <div class="links">
-            <a href="https://discord.gg/AXqB2xhyNg" class="link-card discord" target="_blank">
-                <div class="link-icon">
-                    <i class="fab fa-discord"></i>
-                </div>
-                <span>Discord community Shop!</span>
-                <div class="arrow">
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-            </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-main">Pre-Promoción</span>
+                <span class="title-year">2026</span>
+                <span class="title-grade">Grado 10°A</span>
+            </h1>
+            <p class="hero-subtitle">Recuerdos que durarán para siempre</p>
+            <div class="hero-buttons">
+                <a href="#estudiantes" class="btn btn-primary">Conocer a los Estudiantes</a>
+                <a href="#recuerdos" class="btn btn-secondary">Ver Recuerdos</a>
+            </div>
         </div>
-        
-        <footer>
-            <p>© 2025 Tascon - Todos los derechos reservados</p>
-        </footer>
-    </div>
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </section>
+
+    <!-- Sección Estudiantes -->
+    <section id="estudiantes" class="students">
+        <div class="container">
+            <h2 class="section-title">Nuestros Estudiantes</h2>
+            <div class="students-grid" id="studentsGrid">
+                <!-- Las tarjetas de estudiantes se generarán dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Horario de Clases -->
+    <section id="horario" class="schedule">
+        <div class="container">
+            <h2 class="section-title">Horario de Clases</h2>
+            <div class="schedule-container">
+                <div class="schedule-tabs">
+                    <button class="tab-btn active" data-day="lunes">Lunes</button>
+                    <button class="tab-btn" data-day="martes">Martes</button>
+                    <button class="tab-btn" data-day="miercoles">Miércoles</button>
+                    <button class="tab-btn" data-day="jueves">Jueves</button>
+                    <button class="tab-btn" data-day="viernes">Viernes</button>
+                </div>
+                
+                <div class="schedule-content">
+                    <div class="day-schedule active" id="lunes">
+                        <div class="schedule-grid">
+                            <div class="time-slot">7:00 - 8:00</div>
+                            <div class="subject math">Matemáticas</div>
+                            <div class="teacher">Prof. García</div>
+                            
+                            <div class="time-slot">8:00 - 9:00</div>
+                            <div class="subject spanish">Español</div>
+                            <div class="teacher">Prof. Martínez</div>
+                            
+                            <div class="time-slot">9:00 - 9:15</div>
+                            <div class="break">Receso</div>
+                            <div class="teacher">-</div>
+                            
+                            <div class="time-slot">9:15 - 10:15</div>
+                            <div class="subject science">Ciencias</div>
+                            <div class="teacher">Prof. López</div>
+                            
+                            <div class="time-slot">10:15 - 11:15</div>
+                            <div class="subject english">Inglés</div>
+                            <div class="teacher">Prof. Smith</div>
+                            
+                            <div class="time-slot">11:15 - 12:15</div>
+                            <div class="subject history">Historia</div>
+                            <div class="teacher">Prof. Rodríguez</div>
+                        </div>
+                    </div>
+                    
+                    <div class="day-schedule" id="martes">
+                        <div class="schedule-grid">
+                            <div class="time-slot">7:00 - 8:00</div>
+                            <div class="subject english">Inglés</div>
+                            <div class="teacher">Prof. Smith</div>
+                            
+                            <div class="time-slot">8:00 - 9:00</div>
+                            <div class="subject math">Matemáticas</div>
+                            <div class="teacher">Prof. García</div>
+                            
+                            <div class="time-slot">9:00 - 9:15</div>
+                            <div class="break">Receso</div>
+                            <div class="teacher">-</div>
+                            
+                            <div class="time-slot">9:15 - 10:15</div>
+                            <div class="subject art">Arte</div>
+                            <div class="teacher">Prof. Torres</div>
+                            
+                            <div class="time-slot">10:15 - 11:15</div>
+                            <div class="subject pe">Educación Física</div>
+                            <div class="teacher">Prof. Díaz</div>
+                            
+                            <div class="time-slot">11:15 - 12:15</div>
+                            <div class="subject spanish">Español</div>
+                            <div class="teacher">Prof. Martínez</div>
+                        </div>
+                    </div>
+                    
+                    <div class="day-schedule" id="miercoles">
+                        <div class="schedule-grid">
+                            <div class="time-slot">7:00 - 8:00</div>
+                            <div class="subject science">Ciencias</div>
+                            <div class="teacher">Prof. López</div>
+                            
+                            <div class="time-slot">8:00 - 9:00</div>
+                            <div class="subject history">Historia</div>
+                            <div class="teacher">Prof. Rodríguez</div>
+                            
+                            <div class="time-slot">9:00 - 9:15</div>
+                            <div class="break">Receso</div>
+                            <div class="teacher">-</div>
+                            
+                            <div class="time-slot">9:15 - 10:15</div>
+                            <div class="subject math">Matemáticas</div>
+                            <div class="teacher">Prof. García</div>
+                            
+                            <div class="time-slot">10:15 - 11:15</div>
+                            <div class="subject technology">Tecnología</div>
+                            <div class="teacher">Prof. Hernández</div>
+                            
+                            <div class="time-slot">11:15 - 12:15</div>
+                            <div class="subject music">Música</div>
+                            <div class="teacher">Prof. Vargas</div>
+                        </div>
+                    </div>
+                    
+                    <div class="day-schedule" id="jueves">
+                        <div class="schedule-grid">
+                            <div class="time-slot">7:00 - 8:00</div>
+                            <div class="subject spanish">Español</div>
+                            <div class="teacher">Prof. Martínez</div>
+                            
+                            <div class="time-slot">8:00 - 9:00</div>
+                            <div class="subject english">Inglés</div>
+                            <div class="teacher">Prof. Smith</div>
+                            
+                            <div class="time-slot">9:00 - 9:15</div>
+                            <div class="break">Receso</div>
+                            <div class="teacher">-</div>
+                            
+                            <div class="time-slot">9:15 - 10:15</div>
+                            <div class="subject science">Ciencias</div>
+                            <div class="teacher">Prof. López</div>
+                            
+                            <div class="time-slot">10:15 - 11:15</div>
+                            <div class="subject math">Matemáticas</div>
+                            <div class="teacher">Prof. García</div>
+                            
+                            <div class="time-slot">11:15 - 12:15</div>
+                            <div class="subject geography">Geografía</div>
+                            <div class="teacher">Prof. Morales</div>
+                        </div>
+                    </div>
+                    
+                    <div class="day-schedule" id="viernes">
+                        <div class="schedule-grid">
+                            <div class="time-slot">7:00 - 8:00</div>
+                            <div class="subject history">Historia</div>
+                            <div class="teacher">Prof. Rodríguez</div>
+                            
+                            <div class="time-slot">8:00 - 9:00</div>
+                            <div class="subject pe">Educación Física</div>
+                            <div class="teacher">Prof. Díaz</div>
+                            
+                            <div class="time-slot">9:00 - 9:15</div>
+                            <div class="break">Receso</div>
+                            <div class="teacher">-</div>
+                            
+                            <div class="time-slot">9:15 - 10:15</div>
+                            <div class="subject art">Arte</div>
+                            <div class="teacher">Prof. Torres</div>
+                            
+                            <div class="time-slot">10:15 - 11:15</div>
+                            <div class="subject english">Inglés</div>
+                            <div class="teacher">Prof. Smith</div>
+                            
+                            <div class="time-slot">11:15 - 12:15</div>
+                            <div class="subject spanish">Español</div>
+                            <div class="teacher">Prof. Martínez</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="schedule-legend">
+                    <h4>Leyenda de Asignaturas</h4>
+                    <div class="legend-items">
+                        <div class="legend-item">
+                            <span class="legend-color math"></span>
+                            <span>Matemáticas</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color spanish"></span>
+                            <span>Español</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color science"></span>
+                            <span>Ciencias</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color english"></span>
+                            <span>Inglés</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color history"></span>
+                            <span>Historia</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color art"></span>
+                            <span>Arte</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color pe"></span>
+                            <span>Educación Física</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color technology"></span>
+                            <span>Tecnología</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color music"></span>
+                            <span>Música</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color geography"></span>
+                            <span>Geografía</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Recuerdos -->
+    <section id="recuerdos" class="memories">
+        <div class="container">
+            <h2 class="section-title">Galería de Recuerdos</h2>
+            <div class="memories-grid">
+                <div class="memory-item">
+                    <div class="memory-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span>Primer Día</span>
+                    </div>
+                </div>
+                <div class="memory-item">
+                    <div class="memory-overlay">
+                        <i class="fas fa-users"></i>
+                        <span>Trabajo en Equipo</span>
+                    </div>
+                </div>
+                <div class="memory-item">
+                    <div class="memory-overlay">
+                        <i class="fas fa-trophy"></i>
+                        <span>Logros</span>
+                    </div>
+                </div>
+                <div class="memory-item">
+                    <div class="memory-overlay">
+                        <i class="fas fa-heart"></i>
+                        <span>Amistad</span>
+                    </div>
+                </div>
+                <div class="memory-item">
+                    <div class="memory-overlay">
+                        <i class="fas fa-book"></i>
+                        <span>Estudios</span>
+                    </div>
+                </div>
+                <div class="memory-item">
+                    <div class="memory-overlay">
+                        <i class="fas fa-star"></i>
+                        <span>Momentos Especiales</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pre-Promoción 2026</h3>
+                    <p>Grado 10°A - Recuerdos Inolvidables</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Promoción Grado 10. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para imágenes -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
