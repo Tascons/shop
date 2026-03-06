@@ -1,7 +1,7 @@
 // Datos de ejemplo para estudiantes
 const studentsData = [
     {
-        name: "William Andres Gutierrez Hernandez",
+        name: "William  Gutierrez",
         role: "Líder de Grupo",
         description: "Siempre positivo y motivador, organizó muchas actividades del curso.",
         icon: "👩‍🎓"
@@ -501,3 +501,4 @@ additionalStyles.textContent = `
     }
 `;
 document.head.appendChild(additionalStyles);
+
